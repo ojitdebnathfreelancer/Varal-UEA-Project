@@ -1,0 +1,238 @@
+.benefit {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 200px;
+    margin-top: 150px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.benefit .left-benefit {
+    position: relative;
+}
+
+.benefit .right-benefit {
+    position: relative;
+}
+
+.benefit .left-benefit .right-text {
+    margin-top: 100px;
+}
+
+.benefit .left-benefit .text p {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.benefit .left-benefit .text h3 {
+    font-size: 24px;
+    color: #4953de;
+    margin-top: 15px;
+}
+
+.benefit .left-benefit .item {
+    border: 2px solid #cdcbcb;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.benefit .left-benefit .item.right-first-item {
+    margin-top: 0px;
+}
+
+.benefit .left-benefit .item .img-div {
+    display: flex;
+    justify-content: center;
+}
+
+.benefit .left-benefit .item .img-div img {
+    height: 170px;
+}
+
+.mt-90 {
+    margin-top: 110px;
+}
+
+.mt-110 {
+    margin-top: 130px;
+}
+
+.lg-d-none {
+    display: none;
+}
+
+.benefit .left-benefit .item h2 {
+    font-size: 27px;
+    margin-top: 40px;
+}
+
+.benefit .left-benefit .item p {
+    font-size: 25px;
+    color: #a8a5a5;
+    margin: 25px 0px;
+    line-height: 30px;
+}
+
+.padding-right {
+    padding-right: 22px;
+}
+
+.benefit .left-benefit .item span {
+    font-size: 22px;
+    color: #4953de;
+}
+
+.benefit .left-benefit .item span img {
+    margin-left: 15px;
+}
+
+/* left benefit cercul img postitiong  */
+.benefit .left-benefit .ellipase19 {
+    position: absolute;
+    top: -120px;
+    left: 150px;
+}
+
+.benefit .left-benefit .ellipase14 {
+    position: absolute;
+    top: 55%;
+    left: 40%;
+}
+
+.benefit .left-benefit .ellipase13 {
+    position: absolute;
+    top: 75%;
+    left: 105%;
+}
+
+.benefit .left-benefit .ellipase7 {
+    display: none;
+}
+
+.benefit .right-benefit .ellipase27 {
+    position: absolute;
+    top: -85px;
+    left: -40px;
+}
+
+.benefit .right-benefit .ellipase25 {
+    position: absolute;
+    top: 41%;
+    left: -15%;
+}
+
+.benefit .right-benefit .ellipase24 {
+    position: absolute;
+    top: 39%;
+    left: 85%;
+}
+
+
+@media (min-width:320px) and (max-width:576px) {
+    .benefit {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit .left-benefit .item {
+        padding: 20px;
+    }
+
+    .benefit .left-benefit .text p {
+        font-size: 19px;
+    }
+
+    .benefit .left-benefit .item h2 {
+        font-size: 20px;
+    }
+
+    .benefit .left-benefit .item p {
+        font-size: 15px;
+    }
+
+    .benefit .left-benefit .text h3 {
+        font-size: 22px;
+    }
+
+    .d-none {
+        display: none;
+    }
+
+    .d-block {
+        display: block;
+    }
+
+    .benefit .left-benefit .item.phone-mt90 {
+        margin-top: 90px;
+    }
+
+    .benefit .left-benefit .ellipase19,
+    .ellipase13,
+    .ellipase14,
+    .right-benefit .ellipase27,
+    .ellipase25,
+    .ellipase24 {
+        display: none;
+    }
+}
+
+@media (min-width:577px) and (max-width:768px) {
+    .benefit {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit .left-benefit .text {
+        text-align: center;
+    }
+
+    .benefit .left-benefit .right-text {
+        text-align: start;
+        padding-left: 50px;
+    }
+
+    .benefit .left-benefit,
+    .text .item {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .benefit .left-benefit .item p {
+        font-size: 24px;
+    }
+
+    .padding-right-32 {
+        padding-right: 32px;
+    }
+
+    .d-none {
+        display: none;
+    }
+
+    .d-block {
+        display: block;
+    }
+
+    .benefit .left-benefit .item.phone-mt90 {
+        margin-top: 90px;
+    }
+
+    .benefit .left-benefit .ellipase14 {
+        position: absolute;
+        top: 35%;
+        left: 25%;
+    }
+
+    .benefit .left-benefit .ellipase7 {
+        display: block;
+        position: absolute;
+        top: 175%;
+        left: 70%;
+    }
+
+    .benefit .left-benefit .ellipase19,
+    .ellipase13,
+    .right-benefit .ellipase27,
+    .ellipase25,
+    .ellipase24 {
+        display: none;
+    }
+}

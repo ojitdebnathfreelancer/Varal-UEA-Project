@@ -1,0 +1,108 @@
+.mission {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 100px 0px;
+}
+
+.mission .title {
+    display: flex;
+    justify-content: center;
+}
+
+.mission .title p {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4953de;
+    text-align: center;
+}
+
+.mission .title span {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #4953de;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    line-break: strict;
+}
+
+.mission h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.mission h2 span {
+    position: relative;
+}
+
+.mission h2 span::after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background-color: orange;
+}
+
+.mission .text {
+    font-size: 29px;
+    color: #a8a5a5;
+    text-align: center;
+    padding: 0px 247px;
+}
+
+
+@media (min-width:320px) and (max-width:576px) {
+    .mission {
+        margin: 50px 0px;
+    }
+
+    .mission h2 {
+        margin-top: 25px;
+    }
+
+    .mission .title {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission .title p {
+        font-size: 21px;
+    }
+
+    .mission .title span {
+        margin-top: 20px;
+    }
+
+    .mission .text {
+        font-size: 21px;
+        padding: 0px 0px;
+    }
+}
+
+
+@media (min-width: 577px) and (max-width:768px) {
+    .mission .title {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission .title p {
+        padding: 0px 135px;
+    }
+
+    .mission .title span {
+        margin-top: 20px;
+    }
+
+    .mission .text {
+        padding: 0px 60px;
+    }
+}

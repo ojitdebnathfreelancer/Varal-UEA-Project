@@ -1,0 +1,111 @@
+.main-nav-container {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav-container .logo {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav-container .logo img {
+    width: 100%;
+}
+
+.main-nav-container .link-list {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav-container .link-list .main-menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav-container .link-list .main-menu li a {
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-left: 15px;
+    color: grey;
+}
+
+.main-nav-container .link-list ul li .active {
+    color: black;
+}
+
+.main-nav-container .link-list button {
+    background: #4953de;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 20px 25px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.hidden-menu {
+    position: relative;
+    display: none;
+}
+
+.hidden-menu .toggol-btn {
+    cursor: pointer;
+}
+
+.hidden-menu .toggol-btn span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin-top: 4px;
+}
+
+.hidden-menu .phone-nav {
+    width: 80px;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+}
+
+.hidden-menu .phone-nav li a {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: grey;
+    margin-top: 5px;
+    display: block;
+}
+
+@media (min-width: 320px) and (max-width:576px) {
+    .main-nav-container {
+        flex-direction: row-reverse;
+    }
+
+    .main-nav-container {
+        padding: 0px 0px;
+    }
+
+    .hidden-menu {
+        display: block;
+    }
+
+    .main-nav-container .link-list .main-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .main-nav-container {
+        padding: 0px 50px;
+    }
+
+    .hidden-menu {
+        display: block;
+    }
+
+    .main-nav-container .link-list .main-menu {
+        display: none;
+    }
+}
